@@ -202,8 +202,8 @@ end
 -- Create a basic config.json file and saves it.
 function create_config( )
   -- A simple config with basic plugins and ourselves as privileged user
-  config = {},--sudo users
-    enabled_plugins = {
+  config = {
+    enabled_plugins = {},--sudo users
     "onservice",
     "inrealm",
     "ingroup",
